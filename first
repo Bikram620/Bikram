@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My GitHub Page!</h1>
+        <p>This is a simple page created to showcase my work.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name]! I'm a [Your Role/Profession] who loves [Your Interests].</p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/username/project1">Project 1</a> - A brief description of Project 1.</li>
+                <li><a href="https://github.com/username/project2">Project 2</a> - A brief description of Project 2.</li>
+                <li><a href="https://github.com/username/project3">Project 3</a> - A brief description of Project 3.</li>
+            </ul>
+        </section>
+        <button id="info-button">Click me for a surprise!</button>
+        <p id="surprise" style="display:none;">🎉 Surprise! You're awesome!</p>
+    </main>
+
+    <footer>
+        <p>Connect with me on <a href="https://twitter.com/username" target="_blank">Twitter</a> and <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+document.getElementById('info-button').addEventListener('click', function() {
+    const surprise = document.getElementById('surprise');
+    surprise.style.display = surprise.style.display === 'none' ? 'block' : 'none';
+});
+
